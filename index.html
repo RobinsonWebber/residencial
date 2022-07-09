@@ -42,7 +42,7 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="navbar-top-fixed.css" rel="stylesheet">
+    <link href="assets/dist/css/navbar-top-fixed.css" rel="stylesheet">
   </head>
   
   <body>
@@ -55,10 +55,10 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link"  href="#aptos">Diarias e pacotes</a>
+          <a class="nav-link" href="#aptos" tabindex="-1" aria-disabled="true">Apartamentos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#aptos" tabindex="-1" aria-disabled="true">Apartamentos</a>
+          <a class="nav-link"  href="#politica">Politicas</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#mapa" tabindex="-1" aria-disabled="true">Localização</a>
@@ -73,49 +73,10 @@
 
 <main class="container">
   <section id="inicio">
-    <!-- Acordion
+    <!-- Acordion -->
   
-  <div class="accordion" id="accordionExample">
-    
-      <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
-      </div>
-    </div>
-  </div>
   </section>
--->
+
   <!--Apartamentos slides-->
   <!--Apto 01 -->
   
@@ -123,6 +84,7 @@
   <!-- colunas preço -->
   <section id="aptos">
   <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    
     <div class="col">
       <div class="card mb-4 rounded-3 shadow-sm">
         <div class="card-header py-3 text-white bg-primary border-primary">
@@ -198,16 +160,18 @@
         </div>
       </div>
     </div>
+
     <div class="col">
       <div class="card mb-4 rounded-3 shadow-sm">
         <div class="card-header py-3 text-white bg-primary border-primary">
-          <h4 class="my-0 fw-normal">Apto 02 dormitórios</h4>
+
+        <h4 class="my-0 fw-normal">Apto 02 dormitórios</h4>
         </div>
         <div class="card-body">
 
           <!-- Slides -->
 
-          <div id="carousel_apto03" class="carousel slide" data-bs-ride="carousel">
+          <div id="carousel_predio" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/apto03/1.jpg" class="d-block w-100" alt="...">
@@ -225,11 +189,11 @@
                 <img src="img/apto03/5.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_apto03" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_predio" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel_apto03" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel_predio" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -269,34 +233,88 @@
         </div>
       </div>
     </div>
-    <!--
+
     <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+      <div class="card mb-4 rounded-3 shadow-sm">
         <div class="card-header py-3 text-white bg-primary border-primary">
-          <h4 class="my-0 fw-normal">Pacotes</h4>
+
+        <h4 class="my-0 fw-normal">Estrutura</h4>
         </div>
         <div class="card-body">
-          <h1 class="card-title pricing-card-title">R$ 375.00<small class="text-muted fw-light">/diária</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Pacote Natal/Ano Novo</li>
-            
-            <li><strong>Acomodação máxima 4 pessoas</li></ul>strong>
-            
-           <li> Valores diária (mínimo 3 diárias para reserva)</li>
-            
-           <li>2 pessoas R$ 275.00</li>
-           <li> 3 pessoas R$ 330.00</li>
-           <li>4 pessoas R$ 375.00</li> 
-           <li>Taxa limpeza R$ 150.00</li>
 
-            
+          <!-- Slides -->
+
+          <div id="carousel_apto03" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/predio/1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/predio/2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/predio/3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/predio/4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/predio/5.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_apto03" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel_apto03" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- fim slide -->
+
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Amplo pátio com abrigo para carros</li>
+             
+             <li>Piscina aquecida, cadeiras e guarda-sois para uso dentro do condomínio</li>
+             
+            <li>Segurança; pátio fechado com câmeras de vigilância</li>
+             
+            <li>Wi-fi nos apartamentos</li>
+ 
+             
           </ul>
           
         </div>
-
       </div>
     </div>
-  -->
+    <section id="politica">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3 text-white bg-primary border-primary">
+
+        <h4 class="my-0 fw-normal">Informações</h4>
+        </div>
+        <div class="card-body">
+
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Reserva mediante pagamento caução de 40%</li>
+              <li>Check in: 14:00 até as 22:00</li>
+              <li>Check out: 11:00</li>
+              <li>Não são permitidas pessoas a mais nos apartamentos</li>
+              <li>Uso da piscina somente para hóspedes</li>
+              <li>Não permitimos animais de estimacao</li>
+              <li>Cadeiras e guarda sois somente para uso no residencial</li>
+              <li>Pedimos respeitar horario de silencio</li>
+                         
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    </section>
+     
   </div>
   </section>
   <!-- fim linha preços -->
@@ -304,10 +322,8 @@
   <!--Google map-->
   <section id="mapa">
   <div class="col">
-    
-   <iframe src="https://maps.google.com/maps?q=R.%20Tr%C3%AAs%20de%20Maio,%20120%20-%20Torres&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" frameborder="0" style="border:0"></iframe>
-
-</div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6956.524244426628!2d-49.7092332!3d-29.3333129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952269a74f5a90eb%3A0xd43db6ad242a7ef2!2sR.%20Tr%C3%AAs%20de%20Maio%2C%20120%20-%20Torres%2C%20RS%2C%2095560-000!5e0!3m2!1spt-BR!2sbr!4v1657377503805!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 </section>
 <!--Google Maps-->
 
