@@ -63,6 +63,21 @@
   }
 </style>
 
+   <style>
+  .video {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+  }
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+</style>
     
     <!-- Custom styles for this template -->
     <link href="assets/dist/css/navbar-top-fixed.css" rel="stylesheet">
@@ -179,7 +194,7 @@
               
           
           </div>
-          <div class="col">
+          <div class="video">
           <iframe src="https://drive.google.com/file/d/1HFHTg05ibLvda9NyCofCsWTvXB0J9M5h/preview" width="600" height="450" allow="autoplay"></iframe>
           </div> 
         </ul>
