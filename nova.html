@@ -67,6 +67,25 @@
     /* Small tweaks */
     .list-amenities li { margin:.25rem 0; }
     .modal-body p { margin-bottom: .5rem; }
+
+    /* Corrige proporção das imagens nos carrosséis */
+.carousel-item img {
+  height: 280px;              /* define uma altura padrão uniforme */
+  width: 100%;
+  object-fit: cover;          /* mantém proporção, cortando o excesso */
+  object-position: center;    /* centraliza o foco da imagem */
+  border-radius: .25rem;
+}
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 340px;            /* aumenta a altura em telas médias */
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-item img {
+    height: 400px;            /* altura maior em telas grandes */
+   }
+ }
   </style>
 </head>
 <body>
